@@ -55,6 +55,15 @@ SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
 PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", 25))
 
 
+# API URL - here
+API_URL = getenv("API_URL", "https://tgmusic.fallenapi.fun")
+
+# API KEY - here
+API_KEY = getenv("API_KEY", "")
+
+# For - downloads
+DOWNLOADS_DIR = "downloads"
+
 # Telegram audio and video file size limit (in bytes)
 TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", 104857600))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
