@@ -1,3 +1,6 @@
+import sys
+import uvloop
+
 from pyrogram import Client, errors
 from pyrogram.enums import ChatMemberStatus, ParseMode
 
@@ -15,7 +18,7 @@ class Anony(Client):
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
             in_memory=True,
-            parse_mode=ParseMode.HTML,
+            parse_mode=ParseMode.DEFAULT,
             max_concurrent_transmissions=7,
         )
 
@@ -52,3 +55,6 @@ class Anony(Client):
 
     async def stop(self):
         await super().stop()
+
+if sys.platform != "win32":
+    uvloop.install()
