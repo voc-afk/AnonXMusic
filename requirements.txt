@@ -9,11 +9,12 @@ hachoir
 heroku3
 httpx==0.27.2
 motor
+ntgcalls
 pillow
 psutil
-py-tgcalls==0.9.7
+py-tgcalls
 pykeyboard
-pyrofork
+kurigram
 python-dotenv
 pyyaml
 requests
@@ -21,6 +22,7 @@ speedtest-cli
 spotipy
 tgcrypto
 unidecode
+uvloop; sys_platform != "win32"
 yt-dlp
 youtube-search
 youtube-search-python
